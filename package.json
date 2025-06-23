@@ -1,6 +1,6 @@
 {
   "name": "jekwwer-javascript-workspace",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Ready-to-use JavaScript workspace with a devcontainer, VS Code settings, formatting, pre-commit hooks, and automated releases.",
   "keywords": [
