@@ -1,0 +1,44 @@
+{
+  "name": "jekwwer/javascript-workspace",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1.7.1": {
+      "installTools": true
+    }
+  },
+  "postCreateCommand": "npm install && pipx install pre-commit && pre-commit install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "github.copilot",
+        "github.copilot-chat",
+        "github.vscode-github-actions",
+        "github.vscode-pull-request-github",
+        "ms-vscode-remote.remote-containers",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "settings": {
+        "[markdown]": {
+          "editor.rulers": [
+            120
+          ]
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.rulers": [
+          88
+        ],
+        "files.autoSave": "onFocusChange",
+        "files.autoSaveWhenNoErrors": true,
+
+        "npm.packageManager": "npm",
+
+        "prettier.configPath": "./.prettierrc",
+        "prettier.prettierPath": "./node_modules/prettier"
+      }
+    }
+  }
+}
